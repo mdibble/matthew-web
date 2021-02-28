@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
-import themeReducer from './themeReducer';
+import theme from './themeReducer';
 
-export default combineReducers(themeReducer);
+export default theme; 
