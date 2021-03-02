@@ -1,8 +1,8 @@
 import { CHANGE_THEME } from '../actions/actionTypes';
-import theme from '../enum/theme';
+import { Theme } from '../enum/theme';
 
 const initialState = {
-	theme: theme.Light, 
+	theme: Theme.Light, 
 }
 
 const themeReducer = (state = initialState, action) => {
