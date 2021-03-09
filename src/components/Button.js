@@ -1,13 +1,12 @@
 import { useContext } from 'react';
 import { connect } from 'react-redux';
-import { changeTheme } from './store/actions';
+import { changeTheme } from '../store/actions';
 
-import { Theme } from './store/enum/theme';
+import { Theme } from '../theme/types';
 
 import styled, { ThemeContext } from 'styled-components';
 
 const ThemeButton = styled.button`
-	 color: ${props => props.theme.text_primary};
 `;
 
 function Button(props) {

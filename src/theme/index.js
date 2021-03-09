@@ -1,19 +1,19 @@
-import { Theme } from './store/enum/theme';
+import { Theme } from './types';
 
 const lightTheme = {
 	name: 'Light Theme',
-	primary: 'white',
-	secondary: 'gray',
-	text_primary: 'black',
-	text_secondary: 'black',
+	primary: '#EFEFEF',
+	secondary: '#CFCFCF',
+	text_primary: '#282828',
+	text_secondary: '#353535',
 };
 
 const darkTheme = {
 	name: 'Dark Theme',
-	primary: 'black',
-	secondary: 'gray',
-	text_primary: 'white',
-	text_secondary: 'white'
+	primary: '#282828',
+	secondary: '#353535',
+	text_primary: '#EFEFEF',
+	text_secondary: '#CFCFCF',
 }
 
 

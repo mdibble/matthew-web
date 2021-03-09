@@ -1,5 +1,5 @@
 import { CHANGE_THEME } from '../actions/actionTypes';
-import { Theme } from '../enum/theme';
+import { Theme } from '../../theme/types';
 
 const initialState = {
 	theme: Theme.Light, 
