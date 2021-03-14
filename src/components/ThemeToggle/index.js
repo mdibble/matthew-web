@@ -14,11 +14,18 @@ const ThemeButton = styled.button`
 	border: none;
 	outline: none;
 	background-color: ${props => props.theme.secondary};
+	cursor: pointer;
 	img {
 		background: none;
 		width: 30px;
 		height: 30px;
 		filter: ${props => props.theme.svg};
+	}
+	:hover {
+		background-color:  ${props => props.theme.secondaryInverse};
+		img {
+			filter: ${props => props.theme.svgInverse};
+		}
 	}
 `;
 

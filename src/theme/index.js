@@ -12,6 +12,7 @@ const lightTheme = {
 	secondaryText: '#353535',
 
 	svg: 'invert(11%) sepia(84%) saturate(20%) hue-rotate(315deg) brightness(100%) contrast(92%);',
+	svgInverse: 'invert(100%) sepia(1%) saturate(3334%) hue-rotate(145deg) brightness(121%) contrast(87%);',
 };
 
 const darkTheme = {
@@ -26,6 +27,7 @@ const darkTheme = {
 	secondaryText: '#CFCFCF',
 
 	svg: 'invert(100%) sepia(1%) saturate(3334%) hue-rotate(145deg) brightness(121%) contrast(87%);',
+	svgInverse: 'invert(11%) sepia(84%) saturate(20%) hue-rotate(315deg) brightness(100%) contrast(92%);',
 }
 
 
