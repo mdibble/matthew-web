@@ -2,7 +2,7 @@ import ThemeToggle from '../ThemeToggle';
 
 import styled from 'styled-components';
 
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const SidebarWrapper = styled.div`
 	width: 20%;
@@ -39,16 +39,13 @@ function Sidebar() {
 	return (
         <SidebarWrapper>
 			<SidebarTitle>
-				Matthew Dibble
-				{/* <Link to ="/" style={{textDecoration: "none"}}>Matthew Dibble</Link> */}
+				<Link to ="/" style={{textDecoration: "none"}}>Matthew Dibble</Link>
 			</SidebarTitle>
 			<SidebarItem>
-				Projects
-				{/* <Link to ="/projects" style={{textDecoration: "none"}}>Projects</Link> */}
+				<Link to ="/projects" style={{textDecoration: "none"}}>Projects</Link>
 			</SidebarItem>
 			<SidebarItem>
-				Resume
-				{/* <Link to ="/resume" style={{textDecoration: "none"}}>Resume</Link> */}
+				<Link to ="/resume" style={{textDecoration: "none"}}>Resume</Link>
 			</SidebarItem>
 			<SidebarBreak />
 			<SidebarItem href="https://www.github.com/mdibble" target="_blank" rel="noopener noreferrer">GitHub</SidebarItem>

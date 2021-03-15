@@ -1,5 +1,7 @@
-import { createStore } from 'redux';
-import rootReducer from './reducers';
+import { routerMiddleware } from 'connected-react-router';
+import { applyMiddleware, compose, createStore } from 'redux';
+import createRootReducer from './reducers';
+import { createBrowserHistory } from 'history';
 
 const loadState = () => {
 	try {
@@ -26,6 +28,16 @@ export const saveState = (state) => {
 
 const persistedState = loadState();
 
-export default createStore(rootReducer, persistedState,
-	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+export const history = createBrowserHistory();
+
+export default createStore(
+	createRootReducer(history), 
+	persistedState,
+	compose(
+		applyMiddleware(
+			routerMiddleware(history),
+		),
+		window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+	)
+	
 );

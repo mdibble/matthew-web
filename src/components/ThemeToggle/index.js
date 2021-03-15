@@ -38,7 +38,7 @@ function ThemeToggle(props) {
 }
 
 const mapStateToProps = state => {
-	const { theme } = state;
+	const { theme } = state.theme;
 	return { theme };
 }
 
