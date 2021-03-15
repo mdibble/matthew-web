@@ -2,6 +2,8 @@ import ThemeToggle from '../ThemeToggle';
 
 import styled from 'styled-components';
 
+// import { Link } from 'react-router-dom';
+
 const SidebarWrapper = styled.div`
 	width: 20%;
 	position: absolute;
@@ -22,7 +24,7 @@ const SidebarItem = styled.a`
 `;
 
 const SidebarTitle = styled.h1`
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 `;
 
 const SidebarBreak = styled.div`
@@ -30,15 +32,24 @@ const SidebarBreak = styled.div`
 	margin-top: 20px;
 	margin-bottom: 20px;
 	height: 1px;
-	width: 100%;
+	width: 80%;
 `;
 
 function Sidebar() {
 	return (
         <SidebarWrapper>
-			<SidebarTitle>Matthew Dibble</SidebarTitle>
-			<SidebarItem href="about">Projects</SidebarItem>
-			<SidebarItem href="about">Resume</SidebarItem>
+			<SidebarTitle>
+				Matthew Dibble
+				{/* <Link to ="/" style={{textDecoration: "none"}}>Matthew Dibble</Link> */}
+			</SidebarTitle>
+			<SidebarItem>
+				Projects
+				{/* <Link to ="/projects" style={{textDecoration: "none"}}>Projects</Link> */}
+			</SidebarItem>
+			<SidebarItem>
+				Resume
+				{/* <Link to ="/resume" style={{textDecoration: "none"}}>Resume</Link> */}
+			</SidebarItem>
 			<SidebarBreak />
 			<SidebarItem href="https://www.github.com/mdibble" target="_blank" rel="noopener noreferrer">GitHub</SidebarItem>
 			<SidebarItem href="https://www.linkedin.com/in/matthew-b-dibble/" target="_blank" rel="noopener noreferrer">LinkedIn</SidebarItem>
