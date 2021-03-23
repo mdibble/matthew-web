@@ -1,6 +1,12 @@
+import Project from './Project';
+
 function Projects() {
     return (
-      <h1>Projects</h1>  
+      <div>
+      <h1>Projects</h1>
+      <p>Here's what I've been working on...</p>
+      <Project name="Hello" tech="React"/>
+      </div>
     );
 }
 
