@@ -1,4 +1,4 @@
-type ThemeType = {
+export type ThemeType = {
   name: string,
 
   primary: string,
@@ -17,6 +17,10 @@ type ThemeType = {
 export enum Theme {
   Light,
   Dark,
+}
+
+export type ThemeState = {
+  theme: Theme
 }
 
 const lightTheme: ThemeType = {

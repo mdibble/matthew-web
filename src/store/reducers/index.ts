@@ -1,20 +1,21 @@
-import { connectRouter } from 'connected-react-router';
-import { combineReducers } from 'redux';
+import { connectRouter, RouterState } from 'connected-react-router';
+import { combineReducers, Reducer } from 'redux';
+import { History } from 'history';
 
 import themeReducer from './themeReducer';
 
-import { Theme } from '../../theme';
+import { ThemeState } from '../../theme';
 
 export type State = {
-  router: any,
-  theme: {
-    theme: Theme
-  },
+  router: Reducer<RouterState>,
+  theme: ThemeState
 }
 
-const createRootReducer: any = (history: any) => combineReducers({
-  router: connectRouter(history),
-  theme: themeReducer,
-});
+function createRootReducer(history: History): Reducer {
+  return combineReducers({
+    router: connectRouter(history),
+    theme: themeReducer,
+  });
+}
 
 export default createRootReducer;

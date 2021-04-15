@@ -1,4 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import { ThemeType } from '../../theme';
+
+type Props = {
+  theme: ThemeType
+}
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -6,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     transition: 0.3s ease;
     transition-property: color, background-color;
-    color: ${(props) => props.theme.primaryText};
-     background-color: ${(props) => props.theme.primary};
+    color: ${(props: Props) => props.theme.primaryText};
+    background-color: ${(props: Props) => props.theme.primary};
     font-family: system-ui;
   }
 `;

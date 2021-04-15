@@ -1,12 +1,12 @@
 import { CHANGE_THEME } from '../actions/actionTypes';
-import { Theme } from '../../theme';
+import { Theme, ThemeState } from '../../theme';
 import { Action } from '../actions';
 
 const initialState = {
   theme: Theme.Light,
 };
 
-const themeReducer: any = (state = initialState, action: Action) => {
+function themeReducer(state = initialState, action: Action): ThemeState {
   switch (action.type) {
     case CHANGE_THEME:
       return {
@@ -16,6 +16,6 @@ const themeReducer: any = (state = initialState, action: Action) => {
     default:
       return state;
   }
-};
+}
 
 export default themeReducer;

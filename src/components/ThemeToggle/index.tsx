@@ -2,10 +2,8 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 
 import { changeTheme } from '../../store/actions';
-
+import { State } from '../../store/reducers';
 import { Theme } from '../../theme';
-
-import moon from './moon.svg';
 
 const ThemeButton = styled.button`
   width: 50px;
@@ -39,12 +37,12 @@ function ThemeToggle(props: Props): JSX.Element {
     <ThemeButton
       onClick={() => props.changeTheme(props.theme === Theme.Light ? Theme.Dark : Theme.Light)}
     >
-      <img src={moon} alt="moon" />
+      <img src="/assets/moon.svg" alt="moon" />
     </ThemeButton>
   );
 }
 
-const mapStateToProps = (state: any) => {
+const mapStateToProps = (state: State) => {
   const { theme } = state.theme;
   return { theme };
 };

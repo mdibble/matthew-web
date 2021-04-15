@@ -1,7 +1,7 @@
 import { routerMiddleware } from 'connected-react-router';
 import { applyMiddleware, compose, createStore } from 'redux';
 import { createBrowserHistory } from 'history';
-import createRootReducer from './reducers';
+import createRootReducer, { State } from './reducers';
 
 const loadState = () => {
   try {
@@ -15,7 +15,7 @@ const loadState = () => {
   }
 };
 
-export const saveState: any = (state: any) => {
+export function saveState(state: State): void {
   try {
     const serializedState = JSON.stringify(state);
     localStorage.setItem('state', serializedState);
@@ -23,7 +23,7 @@ export const saveState: any = (state: any) => {
     // eslint-disable-next-line no-console
     console.log(err);
   }
-};
+}
 
 const persistedState = loadState();
 
