@@ -13,6 +13,8 @@ import { history } from '../../store';
 import { State } from '../../store/reducers';
 
 import Home from '../Home';
+import About from '../About';
+import Contact from '../Contact';
 import Projects from '../Projects';
 import Resume from '../Resume';
 
@@ -35,6 +37,12 @@ function App(): JSX.Element {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
             </Route>
             <Route exact path="/projects">
               <Projects />

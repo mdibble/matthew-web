@@ -6,8 +6,8 @@ import { State } from '../../store/reducers';
 import { Theme } from '../../theme';
 
 const ThemeButton = styled.button`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
   outline: none;
@@ -15,8 +15,8 @@ const ThemeButton = styled.button`
   cursor: pointer;
   img {
     background: none;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     filter: ${(props) => props.theme.svg};
   }
   :hover {

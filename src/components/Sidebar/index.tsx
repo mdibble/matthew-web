@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import ThemeToggle from '../ThemeToggle';
+import Social from '../Socials';
 
 const SidebarWrapper = styled.div`
   width: 20%;
-  position: absolute;
+  position: fixed;
   left: 5%;
   top: 5%;
   border: none;
@@ -41,15 +42,21 @@ function Sidebar(): JSX.Element {
       <SidebarTitle>
         <Link to="/" style={{ textDecoration: 'none' }}>Matthew Dibble</Link>
       </SidebarTitle>
+      <Social link="https://www.github.com/mdibble" type="github" />
+      <Social link="https://www.linkedin.com/in/matthew-b-dibble/" type="linkedin" />
+      <SidebarBreak />
+      <SidebarItem>
+        <Link to="/about" style={{ textDecoration: 'none' }}>About</Link>
+      </SidebarItem>
+      <SidebarItem>
+        <Link to="/contact" style={{ textDecoration: 'none' }}>Contact</Link>
+      </SidebarItem>
       <SidebarItem>
         <Link to="/projects" style={{ textDecoration: 'none' }}>Projects</Link>
       </SidebarItem>
       <SidebarItem>
         <Link to="/resume" style={{ textDecoration: 'none' }}>Resume</Link>
       </SidebarItem>
-      <SidebarBreak />
-      <SidebarItem href="https://www.github.com/mdibble" target="_blank" rel="noopener noreferrer">GitHub</SidebarItem>
-      <SidebarItem href="https://www.linkedin.com/in/matthew-b-dibble/" target="_blank" rel="noopener noreferrer">LinkedIn</SidebarItem>
       <SidebarBreak />
       <ThemeToggle />
     </SidebarWrapper>
