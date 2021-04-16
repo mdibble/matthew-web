@@ -25,17 +25,15 @@ export function saveState(state: State): void {
   }
 }
 
-const persistedState = loadState();
-
-export const history = createBrowserHistory();
-
 declare global {
   interface Window {
     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
   }
 }
 
+const persistedState = loadState();
 const composeEnchancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+export const history = createBrowserHistory();
 
 export default createStore(
   createRootReducer(history),

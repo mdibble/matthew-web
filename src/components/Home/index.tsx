@@ -1,32 +1,31 @@
-import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-import { Break, Paragraph } from '../App/Global/Common';
+import {
+  Break,
+  Paragraph,
+  Portrait,
+  Title,
+  TitleContainer,
+} from '../Common';
 
-const Portrait = styled.img`
-  height: 100px;
-  border: 4px solid;
-  border-color: ${(props) => props.theme.secondary};
-  border-radius: 100%;
-  margin-right: 20px;
-`;
+type Props = {
+  landingPage: boolean;
+}
 
-const TitleContainer = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-function Home(): JSX.Element {
+function Home(props: Props): JSX.Element {
+  const { landingPage } = props;
   return (
     <>
       <TitleContainer>
         <Portrait src="/assets/portrait.png" alt="portrait" />
-        <h1>Hello!</h1>
+        <Title>Hello!</Title>
       </TitleContainer>
       <Break />
       <Paragraph>
         {`
-        Nice to meet you! I'm Matthew, a 3B university student in Waterloo, Ontario,
-        expected to graduate in August 2023.
+        Nice to meet you! I'm Matthew, a 3B university student in Waterloo, Ontario.
+        I'm a candidate for a BSc in Computer Science, as well as a BBA.
+        I'm expected to graduate in August 2023.
         `}
       </Paragraph>
       <Break />
@@ -38,6 +37,8 @@ function Home(): JSX.Element {
         `}
       </Paragraph>
       <Break />
+      {landingPage
+      && <Link to="/about" style={{ fontSize: '26px' }}>Learn more...</Link>}
     </>
   );
 }

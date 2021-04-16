@@ -1,0 +1,51 @@
+[
+    {
+        "id": "nes",
+        "name": "NES Emulator",
+        "tech": [
+            "Rust", "SDL2"
+        ],
+        "description": ""
+    },
+    {
+        "id": "election",
+        "name": "2020 US Election Poll Aggregator",
+        "tech": [
+            "React", "Node", "Mongo", "Express"
+        ],
+        "description": ""
+    },
+    {
+        "id": "chip8",
+        "name": "CHIP-8 Emulator",
+        "tech": [
+            "Rust", "SDL2"
+        ],
+        "description": ""
+    },
+    {
+        "id": "smb",
+        "name": "2D Platformer",
+        "tech": [
+            "C++", "SDL2"
+        ],
+        "description": ""
+    },
+    {
+        "id": "matthew-web",
+        "name": "Personal Website",
+        "tech": [
+            "React", "TypeScript", "styled-components", "Redux"
+        ],
+        "description": "Used Redux for global theming as an excuse to try it with TypeScript."
+    },
+    {
+        "id": "chess",
+        "name": "Chess",
+        "tech": [
+            "C++"
+        ],
+        "description": ""
+    }
+    
+]

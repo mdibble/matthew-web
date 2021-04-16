@@ -6,7 +6,7 @@ import { ConnectedRouter } from 'connected-react-router';
 
 import getTheme from '../../theme';
 
-import GlobalStyle from './Global/globalStyle';
+import GlobalStyle from './globalStyle';
 import Sidebar from '../Sidebar';
 
 import { history } from '../../store';
@@ -16,7 +16,7 @@ import Home from '../Home';
 import About from '../About';
 import Contact from '../Contact';
 import Projects from '../Projects';
-import Resume from '../Resume';
+import FourOhFour from '../FourOhFour';
 
 const ContentContainer = styled.div`
     position: absolute;
@@ -36,7 +36,7 @@ function App(): JSX.Element {
         <ContentContainer>
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Home landingPage />
             </Route>
             <Route exact path="/about">
               <About />
@@ -47,8 +47,8 @@ function App(): JSX.Element {
             <Route exact path="/projects">
               <Projects />
             </Route>
-            <Route exact path="/resume">
-              <Resume />
+            <Route>
+              <FourOhFour />
             </Route>
           </Switch>
         </ContentContainer>

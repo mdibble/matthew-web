@@ -25,7 +25,7 @@ const SidebarItem = styled.a`
 `;
 
 const SidebarTitle = styled.h1`
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 `;
 
 const SidebarBreak = styled.div`
@@ -55,7 +55,7 @@ function Sidebar(): JSX.Element {
         <Link to="/projects" style={{ textDecoration: 'none' }}>Projects</Link>
       </SidebarItem>
       <SidebarItem>
-        <Link to="/resume" style={{ textDecoration: 'none' }}>Resume</Link>
+        <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Resume</a>
       </SidebarItem>
       <SidebarBreak />
       <ThemeToggle />

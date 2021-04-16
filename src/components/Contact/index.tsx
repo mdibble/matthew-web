@@ -1,34 +1,30 @@
 import {
+  Title,
   Break,
   Paragraph,
-  ParagraphNB,
   Hyperlink,
-} from '../App/Global/Common';
+  ParagraphNB,
+} from '../Common';
 
 function Contact(): JSX.Element {
   return (
     <>
-      <h1>Contact</h1>
-      <Break />
-      <ParagraphNB>
-        {`
-          I would love to get in touch.
-          Feel free to email me at
-        `}
-      </ParagraphNB>
-      <Hyperlink href="mailto:mdibble@rogers.com">mdibble@rogers.com</Hyperlink>
-      <ParagraphNB>
-        {`
-          if you'd like to talk.
-        `}
-      </ParagraphNB>
+      <Title>Contact</Title>
       <Break />
       <Paragraph>
         {`
-          I can also bea reached on LinkedIn.
+          I would love to get in touch with you!
+          I'm readily available to talk through any of these channels:
         `}
       </Paragraph>
-      { /* Maybe include a button */ }
+      <Break />
+      <ParagraphNB>Email: </ParagraphNB>
+      <Hyperlink href="mailto:mdibble@rogers.com">mdibble@rogers.com</Hyperlink>
+      <Break />
+      <ParagraphNB>Socials: </ParagraphNB>
+      <Hyperlink href="https://www.linkedin.com/in/matthew-b-dibble/" target="_blank" rel="noopener noreferrer">LinkedIn</Hyperlink>
+      <Break />
+      <ParagraphNB>Phone: (705) 770-9989</ParagraphNB>
     </>
   );
 }

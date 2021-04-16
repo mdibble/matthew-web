@@ -24,7 +24,7 @@ const ImgContainer = styled.button`
 function Social(props: Props): JSX.Element {
   const { link, type } = props;
   return (
-    <a href={link} style={{ display: 'inline', marginRight: '10px' }}>
+    <a href={link} target="_blank" rel="noopener noreferrer" style={{ display: 'inline', marginRight: '10px' }}>
       <ImgContainer>
         <img src={`/assets/socials/${type}.svg`} alt={type} />
       </ImgContainer>
