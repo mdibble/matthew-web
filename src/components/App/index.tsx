@@ -6,7 +6,7 @@ import { ConnectedRouter } from 'connected-react-router';
 
 import getTheme from '../../theme';
 
-import GlobalStyle from './GlobalStyle';
+import GlobalStyle from './Global/globalStyle';
 import Sidebar from '../Sidebar';
 
 import { history } from '../../store';
