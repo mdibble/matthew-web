@@ -19,12 +19,16 @@ import Projects from '../Projects';
 import FourOhFour from '../FourOhFour';
 
 const ContentContainer = styled.div`
-    position: absolute;
-    margin: auto;
-    top: 5%;
-    left: 0%;
-    right: 0%;
-    width: 50%;
+  @media only screen and (max-width: 1100px) {
+    left: 20%;
+    width: 70%;
+  }
+  position: absolute;
+  margin: auto;
+  top: 5%;
+  left: 0%;
+  right: 0%;
+  width: 50%;
 `;
 
 function App(): JSX.Element {
