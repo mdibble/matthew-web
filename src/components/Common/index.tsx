@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const BreakMini = styled.div`
+  height: 20px;
+`;
+
 export const Break = styled.div`
   height: 40px;
 `;

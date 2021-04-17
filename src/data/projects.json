@@ -5,7 +5,7 @@
         "tech": [
             "Rust", "SDL2"
         ],
-        "description": ""
+        "description": "I worked on this directly after my CHIP-8 Emulator. I really enjoyed both Rust as well as emulation in general, and I thought that this would be a great next step. The emulator can play a significant portion of the system's library without issue, and taught me so much about computers on a low level. It was easily the most fun to complete, and had by far the biggest scope."
     },
     {
         "id": "election",
@@ -13,7 +13,7 @@
         "tech": [
             "React", "Node", "Mongo", "Express"
         ],
-        "description": ""
+        "description": "This full stack webapp allows users to input polls for the 2020 US Federal Election and can display how each state is trending based on aggregate information. It includes an in-depth REST API that can return detailed information based on specific queries from the client."
     },
     {
         "id": "chip8",
@@ -21,7 +21,7 @@
         "tech": [
             "Rust", "SDL2"
         ],
-        "description": ""
+        "description": "An emulator of the CHIP-8 instruction set, an architecture that was interpreted on many personal computers throughout the 1970s-80s. This was also my first project built with Rust, and served as my introduction to emulation."
     },
     {
         "id": "smb",
@@ -29,7 +29,7 @@
         "tech": [
             "C++", "SDL2"
         ],
-        "description": ""
+        "description": "A simple 2D game that recreates the first level of Super Mario Bros. This was my introduction to computer graphics, and acts as a stepping stone to more powerful graphics APIs like OpenGL."
     },
     {
         "id": "matthew-web",
@@ -37,7 +37,7 @@
         "tech": [
             "React", "TypeScript", "styled-components", "Redux"
         ],
-        "description": "Used Redux for global theming as an excuse to try it with TypeScript."
+        "description": "The website you're on right now! I built this as a way to communicate my portfolio, and it helped me become a better frontend developer. It also uses Redux for global theming, which gave me an excuse to try it with TypeScript."
     },
     {
         "id": "chess",
@@ -45,7 +45,7 @@
         "tech": [
             "C++"
         ],
-        "description": ""
+        "description": "A terminal-friendly version of chess that includes full game rules. This includes en passant, castling, and pawn promotion. I would eventually like to make it so users can play against a chess engine."
     }
     
 ]
