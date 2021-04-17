@@ -13,6 +13,7 @@ const ThemeButton = styled.button`
   outline: none;
   background-color: ${(props) => props.theme.secondary};
   cursor: pointer;
+  margin-right: 20px;
   img {
     background: none;
     width: 25px;

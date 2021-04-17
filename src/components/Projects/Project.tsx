@@ -6,6 +6,7 @@ type Props = {
     name: string,
     tech: Array<string>,
     description: string,
+    source: string,
 };
 
 const Container = styled.div`
@@ -42,12 +43,19 @@ const TechListing = styled.span`
   font-size: 26px;
 `;
 
+const ProjectTitle = styled.a`
+  font-size: 26px;
+  display: block;
+  font-weight: bold;
+`;
+
 function Project(props: Props): JSX.Element {
   const {
     id,
     name,
     tech,
     description,
+    source,
   } = props;
 
   let mappedTech: JSX.Element[] = [];
@@ -72,7 +80,7 @@ function Project(props: Props): JSX.Element {
       <Container>
         <ImageContainer><img src={`/assets/project/${id}.jpg`} alt={id} /></ImageContainer>
         <InfoContainer>
-          <h1>{name}</h1>
+          <ProjectTitle href={source} target="_blank" rel="noopener noreferrer">{name}</ProjectTitle>
           {mappedTech}
           <BreakMini />
           <p>{description}</p>

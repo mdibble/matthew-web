@@ -11,6 +11,7 @@ function Projects(): JSX.Element {
       name={project.name}
       tech={project.tech}
       description={project.description}
+      source={project.source}
     />
   ));
 

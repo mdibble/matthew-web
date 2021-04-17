@@ -10,7 +10,7 @@ function About(): JSX.Element {
       <Paragraph>
         {`
           Tech has always been one of my biggest passions and it's the field I want to work in full-time.
-          I always like learning new things, and have a constantly-growing mental list of what I want to dip my toes into next.
+          I love learning new things, and always have a growing mental list of what I want to dip my toes into next.
         `}
       </Paragraph>
       <Break />
@@ -53,7 +53,7 @@ function About(): JSX.Element {
       <Paragraph>
         {`
           Outside of tech, I like watching sports, movies, and listening to music.
-          I also used to be an avid photographer and am hoping to get back into that hobby soon.
+          I also used to be an avid photographer, but am hoping to get back into that hobby soon.
         `}
       </Paragraph>
       <EndBreak />

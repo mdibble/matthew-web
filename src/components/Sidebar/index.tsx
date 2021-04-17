@@ -17,6 +17,11 @@ const SidebarWrapper = styled.div`
   }
 `;
 
+const SidebarBottomContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const SidebarItem = styled.a`
   margin-top: 20px;
   margin-bottom: 20px;
@@ -58,7 +63,10 @@ function Sidebar(): JSX.Element {
         <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Resume</a>
       </SidebarItem>
       <SidebarBreak />
-      <ThemeToggle />
+      <SidebarBottomContainer>
+        <ThemeToggle />
+        <a href="https://www.github.com/mdibble/matthew-web/" target="_blank" rel="noopener noreferrer">View Source</a>
+      </SidebarBottomContainer>
     </SidebarWrapper>
   );
 }
