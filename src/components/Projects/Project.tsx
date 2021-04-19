@@ -43,10 +43,22 @@ const TechListing = styled.span`
   font-size: 26px;
 `;
 
-const ProjectTitle = styled.a`
+const ProjectTitle = styled.h1`
   font-size: 26px;
   display: block;
   font-weight: bold;
+  display: inline;
+  margin-right: 12px;
+`;
+
+const SourceImage = styled.img`
+  filter: ${(props) => props.theme.svg};
+  height: 20px;
+`;
+
+const TitleContainer = styled.div`
+  display: flex;
+  align-items: baseline;
 `;
 
 function Project(props: Props): JSX.Element {
@@ -80,7 +92,12 @@ function Project(props: Props): JSX.Element {
       <Container>
         <ImageContainer><img src={`/assets/project/${id}.jpg`} alt={id} /></ImageContainer>
         <InfoContainer>
-          <ProjectTitle href={source} target="_blank" rel="noopener noreferrer">{name}</ProjectTitle>
+          <TitleContainer>
+            <ProjectTitle>{name}</ProjectTitle>
+            <a href={source} target="_blank" rel="noopener noreferrer">
+              <SourceImage src="/assets/socials/github.svg" alt={id} />
+            </a>
+          </TitleContainer>
           {mappedTech}
           <BreakMini />
           <p>{description}</p>
