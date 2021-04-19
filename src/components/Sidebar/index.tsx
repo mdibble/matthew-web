@@ -6,7 +6,7 @@ import ThemeToggle from '../ThemeToggle';
 import Social from '../Socials';
 
 const SidebarWrapper = styled.div`
-  width: 20%;
+  width: 15%;
   position: fixed;
   left: 5%;
   top: 5%;
@@ -38,7 +38,7 @@ const SidebarBreak = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
   height: 1px;
-  width: 80%;
+  width: 100%;
 `;
 
 function Sidebar(): JSX.Element {
