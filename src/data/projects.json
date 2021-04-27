@@ -18,13 +18,13 @@
         "source": "https://github.com/mdibble/us-election-polls"
     },
     {
-        "id": "chip8",
-        "name": "CHIP-8 Emulator",
+        "id": "chip8-gui",
+        "name": "CHIP-8 GUI",
         "tech": [
-            "Rust", "SDL2"
+            "C++", "OpenGL", "Dear ImGui"
         ],
-        "description": "An emulator of the CHIP-8 instruction set, an architecture that was interpreted on many personal computers throughout the 1970s-80s. This was also my first project built with Rust, and served as my introduction to emulation.",
-        "source": "https://github.com/mdibble/chip8-emu"
+        "description": "A complete rewrite of my CHIP-8 Emulator that makes it a much more complete piece of software. Utilizes OpenGL as the rendering backend, and features a GUI with debugging tools. This was my introduction to OpenGL, and it taught me a lot about the GPU pipeline.",
+        "source": "https://github.com/mdibble/chip8-gui"
     },
     {
         "id": "smb",
@@ -34,6 +34,15 @@
         ],
         "description": "A simple 2D game that recreates the first level of Super Mario Bros. This was my introduction to computer graphics, and acts as a stepping stone to more powerful graphics APIs like OpenGL.",
         "source": "https://github.com/mdibble/sdl2-game"
+    },
+    {
+        "id": "chip8",
+        "name": "CHIP-8 Emulator",
+        "tech": [
+            "Rust", "SDL2"
+        ],
+        "description": "An emulator of the CHIP-8 instruction set, an architecture that was interpreted on many personal computers throughout the 1970s-80s. This was also my first project built with Rust, and served as my introduction to emulation.",
+        "source": "https://github.com/mdibble/chip8-emu"
     },
     {
         "id": "matthew-web",
