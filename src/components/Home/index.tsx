@@ -29,14 +29,6 @@ function Home(props: Props): JSX.Element {
         `}
       </Paragraph>
       <Break />
-      <Paragraph>
-        {`
-        I'm actively seeking a software development co-op for the Fall 2021 term with
-        particular interests in web development (backend or frontend) or systems
-        programming.
-        `}
-      </Paragraph>
-      <Break />
       {landingPage
       && <Link to="/about" style={{ fontSize: '26px' }}>Learn more...</Link>}
     </>
