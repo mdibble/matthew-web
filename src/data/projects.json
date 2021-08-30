@@ -18,6 +18,15 @@
         "source": "https://github.com/flick-cp317/core"
     },
     {
+        "id": "craft",
+        "name": "Minecraft Clone",
+        "tech": [
+            "C++", "OpenGL" 
+        ],
+        "description": "Basic clone of the popular game Minecraft. Utilizes a proprietary and scaleable 3D engine that focuses on performance. Includes terrain generation using noisemaps, as well as a dynamic chunk rendering system that loads and unloads chunks based on the player position to maximize efficiency.",
+        "source": "https://github.com/mdibble/minecraft-clone"
+    },
+    {
         "id": "election",
         "name": "2020 US Election Poll Aggregator",
         "tech": [

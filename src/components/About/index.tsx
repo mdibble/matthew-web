@@ -35,7 +35,7 @@ function About(): JSX.Element {
       <Paragraph>
         <strong>
           {`
-            TypeScript, Golang, GraphQL, OpenGL, and GUI programming.
+            Golang, GraphQL, Vulkan, parallel programming, and GUI programming.
           `}
         </strong>
       </Paragraph>
