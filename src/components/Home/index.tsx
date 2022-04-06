@@ -32,7 +32,7 @@ function Home(props: Props): JSX.Element {
       <Paragraph>
         <strong>
           {`
-          I'm currently seeking a 4-month co-op for either Summer 2022 or Fall 2022, so
+          I'm currently seeking a 4-month co-op for Fall 2022, so
           please feel free to reach out!
           `}
         </strong>
