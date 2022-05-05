@@ -23,7 +23,7 @@ function Home(props: Props): JSX.Element {
       <Break />
       <Paragraph>
         {`
-        Nice to meet you! I'm Matthew, a 4A university student in Waterloo, Ontario.
+        Nice to meet you! I'm Matthew, a 4B university student in Waterloo, Ontario.
         I'm a candidate for a BSc in Computer Science, as well as a BBA.
         I'm expected to graduate in August 2023.
         `}
@@ -39,7 +39,7 @@ function Home(props: Props): JSX.Element {
       </Paragraph>
       <Break />
       {landingPage
-      && <Link to="/about" style={{ fontSize: '26px' }}>Learn more...</Link>}
+        && <Link to="/about" style={{ fontSize: '26px' }}>Learn more...</Link>}
     </>
   );
 }
