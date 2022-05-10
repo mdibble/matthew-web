@@ -22,7 +22,7 @@ function About(): JSX.Element {
       <Paragraph>
         <strong>
           {`
-            Emulation, modern programming languages, computer graphics, compilers, and web development.
+            Emulation, computer graphics, web development, and parallel programming.
           `}
         </strong>
       </Paragraph>
@@ -35,7 +35,7 @@ function About(): JSX.Element {
       <Paragraph>
         <strong>
           {`
-            Golang, GraphQL, Vulkan, parallel programming, and GUI programming.
+            Golang, GraphQL, Vulkan.
           `}
         </strong>
       </Paragraph>
