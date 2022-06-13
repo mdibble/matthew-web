@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 
-import getTheme from '../../theme';
+import { getTheme } from '../../theme';
 
 import GlobalStyle from './globalStyle';
 import Sidebar from '../Sidebar';

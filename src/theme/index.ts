@@ -67,4 +67,16 @@ function getTheme(theme: Theme): ThemeType {
   return newTheme;
 }
 
-export default getTheme;
+function getSystemTheme(): Theme {
+  try {
+    const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+    if (darkThemeMq.matches) {
+      return Theme.Dark;
+    }
+  } catch (err) {
+    return Theme.Light;
+  }
+  return Theme.Light;
+}
+
+export { getTheme, getSystemTheme };

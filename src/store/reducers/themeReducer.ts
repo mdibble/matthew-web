@@ -1,9 +1,9 @@
 import { CHANGE_THEME } from '../actions/actionTypes';
-import { Theme, ThemeState } from '../../theme';
+import { ThemeState, getSystemTheme } from '../../theme';
 import { Action } from '../actions';
 
 const initialState = {
-  theme: Theme.Light,
+  theme: getSystemTheme(),
 };
 
 function themeReducer(state = initialState, action: Action): ThemeState {
