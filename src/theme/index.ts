@@ -41,11 +41,11 @@ const lightTheme: ThemeType = {
 const darkTheme: ThemeType = {
   name: 'Dark Theme',
 
-  primary: '#282828',
+  primary: '#181828',
   primaryInverse: '#EFEFEF',
   primaryText: '#EFEFEF',
 
-  secondary: '#353535',
+  secondary: '#252535',
   secondaryInverse: '#CFCFCF',
   secondaryText: '#CFCFCF',
 
