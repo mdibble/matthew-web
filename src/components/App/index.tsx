@@ -18,6 +18,7 @@ import Contact from '../Contact';
 import Projects from '../Projects';
 import FourOhFour from '../FourOhFour';
 import Thoughts from '../Thoughts';
+import Post from '../Thoughts/Post';
 
 const ContentContainer = styled.div`
   @media only screen and (max-width: 1100px) {
@@ -55,6 +56,8 @@ function App(): JSX.Element {
             <Route exact path="/thoughts">
               <Thoughts />
             </Route>
+            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+            <Route exact path="/thoughts/:id" render={(props: any) => <Post title="" date={0} icon=" " writing={['']} match={props.match} />} />
             <Route>
               <FourOhFour />
             </Route>

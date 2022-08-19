@@ -21,6 +21,7 @@ function Thoughts(): JSX.Element {
         date={thought.date}
         icon={thought.icon}
         writing={thought.writing}
+        match={thought.date}
       />
     </div>
   ));

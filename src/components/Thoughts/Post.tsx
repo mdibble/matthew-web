@@ -1,10 +1,15 @@
+import { Link } from 'react-router-dom';
+
 import {
   Paragraph, TitleMini, Break, Subtitle, BreakMini,
 } from '../Common';
-
 import Icon from './Icon';
+import ThoughtsJSON from '../../data/thoughts.json';
+import FourOhFour from '../FourOhFour';
 
 type Props = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  match: any;
   title: string,
   date: number, // also serves as unique identifier
   icon: string,
@@ -12,9 +17,26 @@ type Props = {
 };
 
 function Post(props: Props): JSX.Element {
-  const {
-    title, date, icon, writing,
+  let {
+    title, date, icon, writing, match,
   } = props;
+
+  if (date === 0 && !Number.isNaN(match.params.id)) {
+    let found = false;
+    ThoughtsJSON.forEach((item) => {
+      if (item.date === Number(match.params.id)) {
+        title = item.title;
+        date = item.date;
+        icon = item.icon;
+        writing = item.writing;
+        match = item.date;
+        found = true;
+      }
+    });
+    if (!found) {
+      return <FourOhFour />;
+    }
+  }
 
   const formattedWriting = writing.map((item) => (
     <div key={item}>
@@ -37,15 +59,17 @@ function Post(props: Props): JSX.Element {
 
   return (
     <>
-      <div>
-        <div style={{ float: 'left' }}>
-          <Icon icon={icon} />
+      <Link to={`/thoughts/${date}/`}>
+        <div>
+          <div style={{ float: 'left' }}>
+            <Icon icon={icon} />
+          </div>
+          <div style={{ float: 'left', paddingLeft: '20px' }}>
+            <TitleMini>{title}</TitleMini>
+            <Subtitle>{dateString}</Subtitle>
+          </div>
         </div>
-        <div style={{ float: 'left', paddingLeft: '20px' }}>
-          <TitleMini>{title}</TitleMini>
-          <Subtitle>{dateString}</Subtitle>
-        </div>
-      </div>
+      </Link>
       <Break />
       <Break />
       {formattedWriting}
