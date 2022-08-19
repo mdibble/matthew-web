@@ -25,7 +25,15 @@ function Post(props: Props): JSX.Element {
 
   const dateObj = new Date(0);
   dateObj.setUTCSeconds(date);
-  const dateString = `${dateObj.getMonth() + 1}/${dateObj.getDate()}/${dateObj.getFullYear()}`;
+  let hour = dateObj.getHours();
+  const am = hour < 12;
+  if (hour === 0) {
+    hour = 12;
+  } else {
+    hour %= 12;
+  }
+
+  const dateString = `${dateObj.getMonth() + 1}/${dateObj.getDate()}/${dateObj.getFullYear()} ${hour}:${dateObj.getMinutes()} ${am ? 'AM' : 'PM'}`;
 
   return (
     <>
