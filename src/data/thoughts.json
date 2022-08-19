@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Hello World",
+        "icon": "👋",
+        "date": 1660884035,
+        "writing": [
+            "I, a software developer, now have a blog on my website. Quite cliché, only being amplified by the fact that my first post is titled \"Hello World.\"",
+            "Anyway, I created this blog-type page because I thought it would be a good way for me to archive some of my thoughts. It was my first time touching frontend in a while but I'm pretty happy with how it turned out.",
+            "That's all for now, but I'm hoping to be in touch throughout the rest of the summer."
+        ]
+    }
+]

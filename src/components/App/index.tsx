@@ -17,6 +17,7 @@ import About from '../About';
 import Contact from '../Contact';
 import Projects from '../Projects';
 import FourOhFour from '../FourOhFour';
+import Thoughts from '../Thoughts';
 
 const ContentContainer = styled.div`
   @media only screen and (max-width: 1100px) {
@@ -50,6 +51,9 @@ function App(): JSX.Element {
             </Route>
             <Route exact path="/projects">
               <Projects />
+            </Route>
+            <Route exact path="/thoughts">
+              <Thoughts />
             </Route>
             <Route>
               <FourOhFour />

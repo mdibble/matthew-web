@@ -22,7 +22,7 @@ const SidebarBottomContainer = styled.div`
   align-items: center;
 `;
 
-const SidebarItem = styled.a`
+const SidebarItem = styled.p`
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 24px;
@@ -61,6 +61,9 @@ function Sidebar(): JSX.Element {
       </SidebarItem>
       <SidebarItem>
         <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Resume</a>
+      </SidebarItem>
+      <SidebarItem>
+        <Link to="/thoughts" style={{ textDecoration: 'none' }}>Thoughts</Link>
       </SidebarItem>
       <SidebarBreak />
       <SidebarBottomContainer>

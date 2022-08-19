@@ -26,7 +26,15 @@ export const Hyperlink = styled.a`
   display: inline;
 `;
 
+export const Subtitle = styled.p`
+  font-size: 18px;
+  font-style: bold;
+`;
+
 export const Title = styled.h1`
+`;
+
+export const TitleMini = styled.h2`
 `;
 
 export const Portrait = styled.img`
