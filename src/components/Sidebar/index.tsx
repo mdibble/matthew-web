@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import ThemeToggle from '../ThemeToggle';
 import Social from '../Socials';
+import Notify from './Notify';
+import { shouldNotifyAboutNewThoughts } from '../Thoughts';
 
 const SidebarWrapper = styled.div`
   width: 15%;
@@ -22,7 +24,7 @@ const SidebarBottomContainer = styled.div`
   align-items: center;
 `;
 
-const SidebarItem = styled.p`
+const SidebarItem = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 24px;
@@ -63,7 +65,10 @@ function Sidebar(): JSX.Element {
         <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Resume</a>
       </SidebarItem>
       <SidebarItem>
-        <Link to="/thoughts" style={{ textDecoration: 'none' }}>Thoughts</Link>
+        <Link to="/thoughts" style={{ textDecoration: 'none', display: 'inline' }}>
+          Thoughts
+          <Notify condition={shouldNotifyAboutNewThoughts} />
+        </Link>
       </SidebarItem>
       <SidebarBreak />
       <SidebarBottomContainer>
