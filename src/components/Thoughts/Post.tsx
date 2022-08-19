@@ -25,7 +25,7 @@ function Post(props: Props): JSX.Element {
 
   const dateObj = new Date(0);
   dateObj.setUTCSeconds(date);
-  const dateString = `${dateObj.getMonth()}/${dateObj.getDay()}/${dateObj.getFullYear()}`;
+  const dateString = `${dateObj.getMonth() + 1}/${dateObj.getDate()}/${dateObj.getFullYear()}`;
 
   return (
     <>
