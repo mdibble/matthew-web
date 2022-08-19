@@ -11,11 +11,14 @@ border-radius: 50%;
 border: none;
 outline: none;
 background-color: ${(props) => props.theme.secondary};
+position: relative;
 p {
-  padding: 5px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: none;
-  width: 25px;
-  height: 25px;
   font-size: 36px;
 }
 `;

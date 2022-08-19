@@ -18,12 +18,15 @@ const NotifyDiv = styled.div`
 `;
 
 const NotifyText = styled.div`
+  @media only screen and (max-width: 1100px) {
+    display: none;
+  }
   display: inline-block;
   margin-left: 6px;
   font-size: 12px;
   font-weight: bold;
   vertical-align: top;
-  margin-top: 10px;
+  margin-top: 9px;
 `;
 
 function Notify(props: Props): JSX.Element {
