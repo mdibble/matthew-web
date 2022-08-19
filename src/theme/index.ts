@@ -42,11 +42,11 @@ const darkTheme: ThemeType = {
   name: 'Dark Theme',
 
   primary: '#181828',
-  primaryInverse: '#EFEFEF',
-  primaryText: '#EFEFEF',
+  primaryInverse: '#DFDFEF',
+  primaryText: '#DFDFEF',
 
   secondary: '#252535',
-  secondaryInverse: '#CFCFCF',
+  secondaryInverse: '#BFBFCF',
   secondaryText: '#CFCFCF',
 
   svg: 'invert(100%) sepia(1%) saturate(3334%) hue-rotate(145deg) brightness(121%) contrast(87%);',
