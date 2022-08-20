@@ -20,11 +20,16 @@ function Post(props: Props): JSX.Element {
   let {
     title, date, icon, writing, match,
   } = props;
+  let id: string | null = null;
 
-  if (date === 0 && !Number.isNaN(match.params.id)) {
+  if (match && match.params) {
+    id = match.params.id;
+  }
+
+  if (date === 0 && id && !Number.isNaN(id)) {
     let found = false;
     ThoughtsJSON.forEach((item) => {
-      if (item.date === Number(match.params.id)) {
+      if (item.date === Number(id)) {
         title = item.title;
         date = item.date;
         icon = item.icon;
