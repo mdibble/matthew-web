@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 
-import { getTheme } from '../../theme';
+import { getTheme, ThemeType } from '../../theme';
 
 import GlobalStyle from './globalStyle';
 import Sidebar from '../Sidebar';
@@ -31,6 +31,20 @@ const ContentContainer = styled.div`
   left: 0%;
   right: 0%;
   width: 50%;
+`;
+
+type ContainerProps = {
+  theme: ThemeType
+}
+
+const BG = styled.div`
+  background-color: ${(props: ContainerProps) => props.theme.primary};
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
 `;
 
 function App(): JSX.Element {
@@ -63,6 +77,7 @@ function App(): JSX.Element {
             </Route>
           </Switch>
         </ContentContainer>
+        <BG />
         <GlobalStyle />
       </ThemeProvider>
     </ConnectedRouter>

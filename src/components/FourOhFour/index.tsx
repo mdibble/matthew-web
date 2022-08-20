@@ -3,9 +3,9 @@ import { Break, Paragraph, Title } from '../Common';
 function FourOhFour(): JSX.Element {
   return (
     <>
-      <Title>Error 404</Title>
+      <Title>404</Title>
       <Break />
-      <Paragraph>Nothing at this address could be found.</Paragraph>
+      <Paragraph>Nothing could be found at this address.</Paragraph>
     </>
   );
 }
