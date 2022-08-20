@@ -39,7 +39,8 @@ const SidebarBreak = styled.div`
   background-color: ${(props) => props.theme.secondary};
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 1px;
+  height: 4px;
+  border-radius: 3px;
   width: 100%;
 `;
 
@@ -49,9 +50,6 @@ function Sidebar(): JSX.Element {
       <SidebarTitle>
         <Link to="/" style={{ textDecoration: 'none' }}>Matthew Dibble</Link>
       </SidebarTitle>
-      <Social link="https://www.github.com/mdibble" type="github" />
-      <Social link="https://www.linkedin.com/in/matthew-b-dibble/" type="linkedin" />
-      <SidebarBreak />
       <SidebarItem>
         <Link to="/about" style={{ textDecoration: 'none' }}>About</Link>
       </SidebarItem>
@@ -70,6 +68,9 @@ function Sidebar(): JSX.Element {
           <Notify condition={shouldNotifyAboutNewThoughts} />
         </Link>
       </SidebarItem>
+      <SidebarBreak />
+      <Social link="https://www.github.com/mdibble" type="github" />
+      <Social link="https://www.linkedin.com/in/matthew-b-dibble/" type="linkedin" />
       <SidebarBreak />
       <SidebarBottomContainer>
         <ThemeToggle />
