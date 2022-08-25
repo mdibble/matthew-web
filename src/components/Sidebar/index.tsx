@@ -27,7 +27,7 @@ const SidebarBottomContainer = styled.div`
 const SidebarItem = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
 `;
 

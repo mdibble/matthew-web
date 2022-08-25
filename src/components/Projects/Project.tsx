@@ -34,17 +34,17 @@ const InfoContainer = styled.div`
   margin: 20px;
   margin-left: 0px;
   p {
-    font-size: 26px;
+    font-size: 20px;
   }
   flex: 1;
 `;
 
 const TechListing = styled.span`
-  font-size: 26px;
+  font-size: 20px;
 `;
 
 const ProjectTitle = styled.h1`
-  font-size: 26px;
+  font-size: 20px;
   display: block;
   font-weight: bold;
   display: inline;

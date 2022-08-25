@@ -13,16 +13,16 @@ export const EndBreak = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 26px;
+  font-size: 20px;
 `;
 
 export const ParagraphNB = styled.p`
-  font-size: 26px;
+  font-size: 20px;
   display: inline;
 `;
 
 export const Hyperlink = styled.a`
-  font-size: 26px;
+  font-size: 20px;
   display: inline;
 `;
 

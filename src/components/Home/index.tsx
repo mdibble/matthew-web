@@ -30,7 +30,7 @@ function Home(props: Props): JSX.Element {
       </Paragraph>
       <Break />
       {landingPage
-        && <Link to="/about" style={{ fontSize: '26px' }}>Learn more...</Link>}
+        && <Link to="/about" style={{ fontSize: '20px' }}>Learn more...</Link>}
     </>
   );
 }

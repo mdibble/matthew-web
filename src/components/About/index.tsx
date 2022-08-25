@@ -44,7 +44,7 @@ function About(): JSX.Element {
         {`
           If you want to know more about the tech I enjoy using, refer to the  
         `}
-        <Link to="/projects" style={{ fontSize: '26px' }}>projects</Link>
+        <Link to="/projects" style={{ fontSize: '20px' }}>projects</Link>
         {`
           page.
         `}
