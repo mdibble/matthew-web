@@ -1,5 +1,16 @@
 [
     {
+        "title": "Starting at Activision",
+        "icon": "👾",
+        "date": 1662053510,
+        "writing": [
+            "In just under two weeks I'll be starting an eight-month internship at Activision focused on tooling for the Call of Duty engine. It still feels surreal saying that, and I couldn't be more excited. Having the opportunity to contribute to one of the world's biggest gaming franchises will be very special for me. I've been thinking recently about some goals that I'd like to work towards throughout the term. They're fairly general for now, but here's what I have so far:",
+            "Technical goal: To learn more about leveraging GPUs for both graphics and compute. I'd like to get my knowledge to the point where I can comfortably create, utilize, and understand graphics and compute pipelines with modern APIs such as Vulkan or DX12. It's hard for me to define the ambition of this goal, but I think it will be good to work towards regardless.",
+            "Operational goal: To become better acquainted with the development process of an advanced, multi-faceted product. I don't mean from a technical standpoint, but more from the logistics angle. Becoming familiar with the many different roles needed to create software at this scale can give some useful context, especially since communication between people of separate disciplines can be very useful in many situations.",
+            "So there you have it; one technical goal and one operational goal. The list will expand as I settle in at the company, but I figured I'd start at a macro level. On that note I'll be signing off, but I'm optimistic that the next eight months will be pivotal to me as a software developer."
+        ]
+    },
+    {
         "title": "Hello World",
         "icon": "👋",
         "date": 1660884035,
