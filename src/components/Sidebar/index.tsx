@@ -63,7 +63,7 @@ function Sidebar(): JSX.Element {
         <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Resume</a>
       </SidebarItem>
       <SidebarItem>
-        <Link to="/thoughts" style={{ textDecoration: 'none', display: 'inline' }}>
+        <Link to="/thoughts" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
           Thoughts
           <Notify condition={shouldNotifyAboutNewThoughts} />
         </Link>

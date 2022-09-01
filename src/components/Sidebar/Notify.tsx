@@ -14,7 +14,7 @@ const NotifyDiv = styled.div`
   border-radius: 100%;
   display: inline-block;
   margin-left: 12px;
-  margin-bottom: 3px;
+  margin-top: 3px;
 `;
 
 const NotifyText = styled.div`
@@ -25,8 +25,7 @@ const NotifyText = styled.div`
   margin-left: 6px;
   font-size: 12px;
   font-weight: bold;
-  vertical-align: top;
-  margin-top: 9px;
+  margin-top: 3px;
 `;
 
 function Notify(props: Props): JSX.Element {
