@@ -15,7 +15,7 @@ function About(): JSX.Element {
       <Paragraph>
         <strong>
           {`
-            Rendering, emulation, optimization, and compilers.
+            Real time ray tracing, physically based graphics pipelines, and GPU-driven rendering.
           `}
         </strong>
       </Paragraph>

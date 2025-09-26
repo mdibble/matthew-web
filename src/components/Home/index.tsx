@@ -23,7 +23,7 @@ function Home(props: Props): JSX.Element {
       <Break />
       <Paragraph>
         {`
-        Nice to meet you! I'm Matthew, a university student from Canada.
+        Nice to meet you! I'm Matthew, a graphics engineer based in Toronto, Canada.
         I'm currently working at Activision as a software engineer contributing to the Call of Duty engine.
         `}
       </Paragraph>
