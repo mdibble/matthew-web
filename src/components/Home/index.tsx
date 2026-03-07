@@ -23,8 +23,14 @@ function Home(props: Props): JSX.Element {
       <Break />
       <Paragraph>
         {`
-        Nice to meet you! I'm Matthew, a graphics engineer based in Toronto, Canada.
-        I'm currently working at Activision as a software engineer contributing to the Call of Duty engine.
+        Nice to meet you! I'm Matthew, a graphics programmer based in Toronto, Canada.
+        I'm currently working at Activision contributing to the Call of Duty engine.
+        `}
+      </Paragraph>
+      <Break />
+       <Paragraph>
+        {`
+        Computer graphics is my passion and I want to learn as much as I can about the past, present and future of rendering.
         `}
       </Paragraph>
       <Break />

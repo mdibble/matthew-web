@@ -15,7 +15,7 @@ function About(): JSX.Element {
       <Paragraph>
         <strong>
           {`
-            Real time ray tracing, physically based graphics pipelines, and GPU-driven rendering.
+            Real time ray tracing, physically based rendering, and GPU-driven rendering.
           `}
         </strong>
       </Paragraph>

@@ -13,18 +13,15 @@ function Contact(): JSX.Element {
       <Break />
       <Paragraph>
         {`
-          I would love to get in touch with you!
-          I'm readily available to talk through any of these channels:
+          I'm available to talk through any of these channels:
         `}
       </Paragraph>
       <Break />
       <ParagraphNB>Email: </ParagraphNB>
-      <Hyperlink href="mailto:mdibble@rogers.com">mdibble@rogers.com</Hyperlink>
+      <Hyperlink href="mailto:dibble.matthew@outlook.com">dibble.matthew@outlook.com</Hyperlink>
       <Break />
       <ParagraphNB>Socials: </ParagraphNB>
       <Hyperlink href="https://www.linkedin.com/in/matthew-b-dibble/" target="_blank" rel="noopener noreferrer">LinkedIn</Hyperlink>
-      <Break />
-      <ParagraphNB>Phone: (705) 770-9989</ParagraphNB>
     </>
   );
 }
