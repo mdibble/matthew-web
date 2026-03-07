@@ -28,7 +28,7 @@ function Home(props: Props): JSX.Element {
         `}
       </Paragraph>
       <Break />
-       <Paragraph>
+      <Paragraph>
         {`
         Computer graphics is my passion and I want to learn as much as I can about the past, present and future of rendering.
         `}
